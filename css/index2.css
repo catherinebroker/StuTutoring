@@ -176,12 +176,16 @@ Conte4
   background-size: cover;
 }
 
-#conte4 p {
+#conte4 .conte4_step {
   max-width: 320px;
   margin: 0 auto;
   text-align: left;
+}
+
+#conte4 p {
   padding-top: 1rem;
-  line-height: 1.5rem;
+
+  line-height: 1.75rem;
 }
 
 
