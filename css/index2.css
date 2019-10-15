@@ -6,116 +6,77 @@ light blue color: #4ccdde
 Aqua color: #234149
 */
 
-/* body {
-  font-family: "Hiragino Kaku Gothic Pro", sans-serif;
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
+body {
+  font-family: "ヒラギノ角ゴ", sans-serif !important;
 }
 
-h1 {
-  font-size: 56px;
+.addBreak {
+  display:none;
 }
 
-h2 {
-  font-size: 40px;
-}
-
-h3 {
-  font-size: 32px;
-}
-
-h3#h3bottom {
-  text-decoration: underline #ee5d8d;
-}
-
-button.regular_button {
-  color: #FFF;
-  background-image: linear-gradient(#ee5d8d, #eb2f6c);
-  border: none;
-  border-radius: 5px;
-  padding: .7em;
-  font-size: 24px;
-  width: 100%;
-}
-
-button {
-  opacity: 1;
-  transition: 1s ease;
-}
-
-button:hover {
-  opacity: .7;
-  cursor: pointer;
-} */
-
-/*************************************
-NavBar
-*************************************/
-/* nav {
-  width: 800px;
-  height: 78px;
-  margin: 0 auto;
-  font-size: 14px;
-  padding-top: 15px;
-
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 20px;
-  grid-auto-rows: auto;
-}
-
-nav#logo {
-  grid-column: 1 / 2;
-  grid-row: 1;
-}
-
-nav a#about {
+.roundText {
+  font-family: "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO"!important;
+  font-weight: 900;
   color: #5d4640;
-  text-decoration: none;
-  font-weight: 700;
-
-  grid-column: 2 / 3;
-  grid-row: 1;
+  text-shadow: -1px 1px 0 #FFF,
+  1px 1px 0 #FFF,
+ 1px -1px 0 #FFF,
+-1px -1px 0 #FFF;
 }
-
-nav a#otherside {
-  color: #5d4640;
-  text-align: right;
-
-  grid-column: 4 / 5;
-  grid-row: 1;
-}
-
-nav a#button {
-  grid-column: 5 / 6;
-  grid-row: 1;
-}
-
-
-
-button.nav_button {
-  color: #FFF;
-  background-image: linear-gradient(#ee5d8d, #eb2f6c);
-  border: none;
-  border-radius: 5px;
-  margin: 0;
-  font-size: 14px;
-  width: 180px;
-  height: 40px;
-}
-*/
 
 .underlinedH2 {
   border-bottom: 2px solid #f88fac !important;
   padding-bottom: 1.25rem;
 }
 
+.registerButton {
+  color: #FFF;
+  background-image: linear-gradient(#ee5d8d, #eb2f6c);
+  border-radius: 7px;
+  border: none;
+  font-size: 1.5rem;
+  padding: 1.2rem 0;
+}
+
+.registerButton:hover {
+  background-image: linear-gradient(#eb2f6c, #ee5d8d);
+  cursor: pointer;
+}
+
+#conte3and4_background {
+  background-image: url("../img/w/conte3_bg.png");
+  background-repeat:  repeat;
+  background-size: 100vw;
+  background-position: center-top;
+}
+
+
+
+
 @media screen and (max-width: 800px) {
 .removeBreak {
   display: none;
 }
+
+.addBreak {
+  display: inline-block;
 }
+
+.registerButton {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+}
+
+
+
+/*************************************
+NavBar
+*************************************/
+
+
+
+
 /*************************************
 Conte1
 *************************************/
@@ -127,12 +88,42 @@ Conte1
   background-position: center;
 }
 
+#conte1_content {
+  background-image: url("../img/w/lady1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+
+  height: 444px;
+}
+
+#conte1 h1, #conte6 h1 {
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+}
+
+
+@media screen and (max-width: 800px) {
+  #conte1_content {
+    padding-top: 80%;
+    /* vertical-align: bottom; */
+  }
+  
+  #conte1 h1, #conte6 h1 {
+    font-size: 2.3rem;
+    line-height: 3rem;
+  }
+  }
+
+
+
 /*************************************
 Conte2
 *************************************/
 #conte2 {
   background-color: #222;
   color: #FFF;
+  font-family: "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO"!important;
   /* padding: 120px 0 0 0; */
 }
 
@@ -140,24 +131,27 @@ Conte2
   line-height: 3.25rem;
   /* line-height: 225%; */
 }
+
 #conte2 #conte2_underlinedText_2 {
   font-size: 3.25rem;
+  line-height: 4rem;
   font-style: italic;
   text-decoration: underline #f88fac;
   /* border-bottom: 10px solid #ee5d8d; */
 }
 
+
+
+@media screen and (max-width: 800px) {
+  #conte2 #conte2_underlinedText_2 {
+    font-size: 3rem;
+  }
+}
+
+
 /*************************************
 Conte3
 *************************************/
-#conte3 {
-  min-height: 100vh;
-  background-image: url("../img/w/conte3_bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 #conte3 p {
   color: #234149;
   text-align: left;
@@ -166,14 +160,22 @@ Conte3
   padding-bottom: 1rem;
 } 
 
+
+
+@media screen and (max-width: 800px) {
+  #conte3 p {
+    text-align: center;
+  }
+}
+
+
+
 /*************************************
 Conte4
 *************************************/
-#conte4 {
-  min-height: 100vh;
-  background-image: url("../img/w/conte4_bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+#conte4 p {
+  padding-top: 1rem;
+  line-height: 1.75rem;
 }
 
 #conte4 .conte4_step {
@@ -182,301 +184,103 @@ Conte4
   text-align: left;
 }
 
-#conte4 p {
-  padding-top: 1rem;
 
-  line-height: 1.75rem;
-}
-
-
-
-.conte4_header {
-  text-align: center;
-}
-
-.conte4 {
-  width: 800px;
-  padding: 80px 0 110px 0;
-  margin: 0 auto;
-  color: #222;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 80px;
-  grid-auto-rows: auto;
-}
-
-.conte4_step1 {
-  grid-column: 1 / 2;
-  grid-row: 1;
-
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5px;
-  grid-auto-rows: auto;
-}
-
-.step1flag {
-  grid-column: 1 / 2;
-  grid-row: 1;
-}
-.step1text {
-  grid-column: 2 / 4;
-  grid-row: 1;
-}
-.step1img {
-  grid-column: 1 / 4;
-  grid-row: 2;
-}
-.step1img img{
-  max-width: 100%;
-}
-
-/****************/
-.conte4_step2 {
-  grid-column: 2 / 3;
-  grid-row: 1;
-
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5px;
-  grid-auto-rows: auto;
-}
-.step2flag {
-  grid-column: 1 / 2;
-  grid-row: 1;
-}
-.step2text {
-  grid-column: 2 / 4;
-  grid-row: 1;
-}
-.step2img {
-  grid-column: 1 / 4;
-  grid-row: 2;
-}
-.step2img img{
-  max-width: 100%;
-}
-
-/****************/
-
-.conte4_step3 {
-  grid-column: 1 / 2;
-  grid-row: 2;
-
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5px;
-  grid-auto-rows: auto;
-}
-.step3flag {
-  grid-column: 1 / 2;
-  grid-row: 1;
-}
-.step3text {
-  grid-column: 2 / 4;
-  grid-row: 1;
-}
-.step3img {
-  grid-column: 1 / 4;
-  grid-row: 2;
-}
-.step3 img {
-  max-width: 100%;
-}
-
-/****************/
-
-.conte4_step4 {
-  grid-column: 2 / 3;
-  grid-row: 2;
-
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5px;
-  grid-auto-rows: auto;
-}
-.step4flag {
-  grid-column: 1 / 2;
-  grid-row: 1;
-}
-.step4text {
-  grid-column: 2 / 4;
-  grid-row: 1;
-}
-.step4img {
-  grid-column: 1 / 4;
-  grid-row: 2;
-}
-.step4img img {
-  max-width: 100%;
-}
 
 /*************************************
 Conte5
 *************************************/
-.conte5_bg {
-  width: 800px;
-  margin: 0 auto 120px auto;
-  padding: 0 auto;
-  border: 1px solid #ee5d8d;
+#conte5 p {
+  font-size: 1.2rem;
+}
+
+#conte5 h2 {
+  color: #FFF;
+  margin: 0;
+  text-shadow: none;
+}
+
+#conte5_h2_pink {
+ color: #f88fac;
+}
+
+#conte5 h3 {
+  font-size: 2.2rem;
+  font-weight: bolder;
+}
+
+.conte5_h3_underline {
+  text-decoration: underline #f88fac;
+}
+
+#conte5 h4 {
+  font-family: "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO"!important;
+  color: #f88fac;
+  font-style: italic;
+  font-weight: 900;
+}
+
+#conte5_border {
+  border: 2px solid #f88fac;
   border-radius: 10px;
 }
 
-.conte5 {
-  width: 800px;
-  padding: 37px 80px 60px 60px;
-  align-items: center;
-  margin: 0 auto;
-  color: #222;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-gap: 30px;
-  grid-auto-rows: auto;
-}
-
-.conte5_header {
-  width: 455px;
-  margin: 0 auto;
-  margin-top: -30px;
-  padding: 10px 0;
-  text-align: center;
+#conte5_header {
+  margin-top: -35px;
   font-style: italic;
   color: #FFF;
   background-color: #222;
   transform: skew(-15deg);  /* SKEW */
 }
 
-.conte5_header h3 {
-  margin: 0 auto;
+#conte5_header h2 {
   transform: skew(15deg);  /* reverse SKEW */
 }
 
-#conte5_header_pink {
-  color: #f88fac;
+
+
+@media screen and (max-width: 800px) {
+  #conte5 h2, #conte5 h4, #conte5 p{
+    font-size: 110%;
+  }
+
+  #conte5 h3 {
+    font-size: 130%;
+  }
+
+  #conte5_header {
+    margin-top: -20px;
+  }
 }
 
-#conte5_pinkunderline {
-  text-decoration: underline #ee5d8d;
-}
 
-.point1 {
-  grid-column: 1 / 2;
-  grid-row: 1;
-}
 
-.point1 h5 {
-  font-size: 20px;
-  color: #f88fac;
-  font-style: italic;
-}
-
-.point1_text {
-  grid-column: 2 / 8;
-  grid-row: 1;
-}
-
-.point1_text p {
-  margin: 15px auto 10px auto;
-}
-
-.point1_text h2 {
-  margin: 10px auto 0px auto;
-}
-
-.point1_text p#conte5_subtext {
-  font-size: 10px;
-}
-
-.point1_text p#conte5_subtext a {
-  text-decoration: none;
-}
-
-.point2 {
-  grid-column: 1 / 2;
-  grid-row: 2;
-}
-
-.point2 h5 {
-  font-size: 20px;
-  color: #f88fac;
-  font-style: italic;
-}
-
-.point2_text p {
-  margin: 15px auto 10px auto;
-}
-
-.point2_text h2 {
-  margin: 10px auto 0px auto;
-}
-
-.point2_text {
-  grid-column: 2 / 8;
-  grid-row: 2;
-}
-
-.point2_text p {
-  margin: 15px auto 10px auto;
-}
-
-.point2_text h2 {
-  margin: 10px auto 0px auto;
-}
-
-.point3 {
-  grid-column: 1 / 2;
-  grid-row: 3;
-}
-
-.point3_text {
-  grid-column: 2 / 8;
-  grid-row: 3;
-}
-
-.point3_text p {
-  margin: 15px auto 10px auto;
-}
-
-.point3_text h2 {
-  margin: 10px auto 0px auto;
-}
-
-.point3 h5 {
-  font-size: 20px;
-  color: #f88fac;
-  font-style: italic;
-}
 
 /*************************************
 Conte6
 *************************************/
-.conte6_bg {
+#conte6 {
   height: 100vh;
   background-image: url("../img/w/conte1_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
-.conte6 {
-  width: 800px;
-  margin: 0 auto;
-  padding-top: 133px;
-  color: #5d4640;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 25px;
-  grid-auto-rows: auto;
+
+
+/*************************************
+Footer
+*************************************/
+#footer {
+  color: #FFF;
+  background-color: #252525;
 }
 
-.left {
-  grid-column: 1 / 2;
-  grid-row: 1;
+#footer a {
+  color: #FFF;
 }
 
-.right {
-  grid-column: 2 / 3;
-}
-
-.conte6 .right h1 {
-  margin: 0 auto 0 auto;
+#footer a:hover {
+  opacity: .5;
+  text-decoration: none;
 }
