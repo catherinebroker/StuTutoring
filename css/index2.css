@@ -73,6 +73,20 @@ body {
 /*************************************
 NavBar
 *************************************/
+#navigation {
+  background-color: #FFF;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#navigation_a {
+  color: #222;
+  font-size: 12px;
+}
+
+#navigation_a:hover {
+  color: #4ccdde;
+}
 
 
 
@@ -264,6 +278,10 @@ Conte6
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+#conte6_content {
+  padding-top: 10%;
 }
 
 
